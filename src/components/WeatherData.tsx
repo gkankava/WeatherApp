@@ -22,7 +22,7 @@ function WeatherData({ data }: Props) {
 
   const getIcon = (icon: string) => {
     if (icon) {
-      const iconName = icon.split("/").pop()?.split(".")[0];
+      const iconName = icon.split("/").pop()?.split(".")[0] || "113";
       const dayTime = is_day === 1 ? "day" : "night";
       return icons[iconName][dayTime];
     }
@@ -63,7 +63,7 @@ function WeatherData({ data }: Props) {
             Sea level {pressure}
           </p>
           <p className="text-[14px] tracking-[0.05em] text-white mt-[4px]">
-            Wind Speed {humidity}km/h
+            Wind Speed {wind}km/h
           </p>
           <p className="text-[14px] tracking-[0.05em] text-white mt-[4px]">
             Visibility {visibility}km

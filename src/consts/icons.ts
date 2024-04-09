@@ -16,7 +16,7 @@ import overcastRain from "../assets/icons/overcast-rain.svg";
 import sunny from "../assets/icons/sunny.svg";
 import overcastSnow from "../assets/icons/overcast-snow.svg";
 
-export const icons = {
+export const icons: any = {
   "113": {
     day: sunny,
     night: clear,
