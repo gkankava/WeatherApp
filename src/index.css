@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #151a2a;
+  font-family: "Ravenna Serial", sans-serif;
+}
+
+#root {
+  height: 100vh;
+}
+
+input {
+  @apply outline-none;
+}
